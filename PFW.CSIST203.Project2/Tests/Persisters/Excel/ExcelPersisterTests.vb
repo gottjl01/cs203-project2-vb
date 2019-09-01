@@ -207,7 +207,7 @@ Namespace PFW.CSIST203.Project2.Tests.Persisters.Excel
 
                 AssertDelegateSuccess(Sub() obj.Dispose(),
                     "Disposing of the object should not throw an exception")
-                Assert.IsTrue(obj.isDisposed, "The IsDisposed property should be set to False after a called to Dispose()")
+                Assert.IsTrue(obj.isDisposed, "The IsDisposed property should be set to True after a called to Dispose()")
             End Sub
 
             <TestMethod>
