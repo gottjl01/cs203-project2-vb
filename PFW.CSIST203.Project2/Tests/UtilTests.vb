@@ -59,8 +59,8 @@ Namespace PFW.CSIST203.Project2.Tests
                     Catch ex As Exception
 
                         If (ex.Message.IndexOf("Microsoft.ACE.OLEDB.12.0' provider is not registered on the local machine", StringComparison.OrdinalIgnoreCase) >= 0) Then
-                            logger.Error("Please install the Microsoft Access Database Engine 2010 Redistributable: https://www.microsoft.com/en-us/download/confirmation.aspx?id=13255", ex)
-                            Throw New System.Exception("Please install the Microsoft Access Database Engine 2010 Redistributable: https://www.microsoft.com/en-us/download/confirmation.aspx?id=13255")
+                            logger.Error("Please install the Microsoft Access Database Engine 2010 Redistributable: https://www.microsoft.com/en-US/download/details.aspx?id=13255", ex)
+                            Throw New System.Exception("Please install the Microsoft Access Database Engine 2010 Redistributable: https://www.microsoft.com/en-US/download/details.aspx?id=13255")
                         End If
 
                         logger.Error("Problem reading excel file: " + tmpExcelFile, ex)
